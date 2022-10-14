@@ -1,0 +1,75 @@
+.team{
+    background-color: #F5F4FA;
+    padding-bottom: 94px;
+
+&__list{
+    text-align: center;
+}
+
+&__cards{
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+background-color: var(--hero-titel-color);
+}
+
+&__name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-transform: none;
+    }
+
+&__job{
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-transform: none;
+    margin-top: 10px;
+    padding-bottom: 16px;
+    }
+
+&__list-name{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+}
+.social-links{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    
+
+&__cirl{
+    display: flex;
+    justify-content: center;
+    width: 44px;
+    height: 44px; 
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+}
+
+&__icons{
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__cirl:hover ,
+&__cirl:focus {
+    fill: var(--hero-titel-color);
+    background-color: var(--primary-acent-color);
+}
+
+&__cirl:hover svg,
+&__cirl:focus svg{
+    fill: var(--hero-titel-color);
+
+}
+}

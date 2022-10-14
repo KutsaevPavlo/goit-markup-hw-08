@@ -1,0 +1,24 @@
+
+.hero{
+    max-width: 1600px;
+    height: 600px;
+    background-color: #2F303A;
+    background-image: linear-gradient(to right, var(--bghero), var(--bghero)), url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1600px;
+  
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+
+    &__titel{
+    @include font(44px, 900, 1.36);  
+
+    color: #FFFFFF;
+    letter-spacing: 0.06em;
+    text-transform: uppercase; 
+    padding-bottom: 30px;
+}
+}
