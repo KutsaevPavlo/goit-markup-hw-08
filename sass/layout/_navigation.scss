@@ -1,3 +1,24 @@
+
+.auth-nav,
+.site-nav{
+    display: none;
+}
+
+// .page-header{
+//     padding-bottom: 16px;
+//     padding-top: 16px;  
+// }
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+
+
 .main-nav{
     display: flex;
     align-items: center;
@@ -106,4 +127,5 @@
 .auth-nav .link:focus svg {
     color: var(--primary-acent-color);
     fill: var(--primary-acent-color);
+}
 }

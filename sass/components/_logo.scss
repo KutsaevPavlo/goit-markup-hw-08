@@ -1,5 +1,62 @@
+
+@media screen and (min-width: 480px) {
+    .logo {
+        color: #000000;
+        // padding-top: 16px;
+        // padding-bottom: 16px;
+        
+    
+    
+    &__blue {
+        color: #2196F3;
+    }
+    
+    &,
+    &__blue {
+         @include font(26px, 700, 1.2);    
+         font-family: 'Raleway';   
+        text-decoration: none;
+        
+    }
+    }
+
+    .mobile-menu{
+        display: inline-flex;
+        border: none;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+
+        &__icon
+        {width: 40px;
+        height: 40px;}
+
+        & &__close{
+            display: none;
+        }
+ 
+        &.is-open &__close{
+            display: block;
+        }
+
+        &.is-open &__menu{
+            display: none;
+        }
+    }
+
+
+    } 
+    
+    
+
+
+
+
+
+@media screen and (min-width: 1200px) {
 .logo {
     color: #000000;
+    
 
 
 &__blue {
@@ -11,5 +68,8 @@
      @include font(26px, 700, 1.2);    
      font-family: 'Raleway';   
     text-decoration: none;
+    
 }
 }
+}
+

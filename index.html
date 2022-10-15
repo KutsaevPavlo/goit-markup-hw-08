@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,6 +16,18 @@
         
             <nav class=" container main-nav">
             <a href="./index.html" class="logo"><span class="logo__blue">Web</span>Studio</a> 
+            <button type="button" class="mobile-menu is-open js-open-menu" 
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+                <svg
+                    class="mobile-menu__icon"
+                    width="40"
+                    hight="40"
+                    aria-label="Перемикач мобільного меню">
+                        <use class="mobile-menu__menu" href="./images/icons.svg#icon-menu_40px"></use>
+                        <use class="mobile-menu__close" href="./images/icons.svg#icon-close_40px"></use>
+                    </svg>
+            </button>
             <ul class="site-nav list">
                 <li class="item"><a href="./index.html"  class="link main-nav-link">Студія</a></li>
                 <li class="item"><a href="./portfolio.html" class="link ">Портфоліо</a></li>
@@ -58,8 +70,8 @@
     </div>
 </section>
 <!-- Features -->
-<section class="section section-features">
-    <!-- Hidden titel-->
+<!-- <section class="section section-features">
+  
     <div class="container">
     <h2 class="section-titel visually-hidden">Наші переваги</h2>
     <ul class="list features-list">
@@ -105,9 +117,9 @@
         </li>
     </ul>
     </div>  
-</section>
+</section> -->
 <!-- Work -->
-<section class="section nopadding-section">
+<!-- <section class="section nopadding-section">
     <div class="container">
     <h2 class="section-titel h2-titel">Чим ми займаємося</h2>
     <ul class="list list-work">
@@ -131,9 +143,9 @@
         </div>
     </ul>
     </div>
-</section>
+</section> -->
 <!-- Team -->
-<section class="section team">
+<!-- <section class="section team">
     <div class="container">
     <h2 class="section-titel team-titel">Наша команда</h2>
     <ul class="list team__list">
@@ -324,10 +336,10 @@
         </li>
     </ul>
     </div>
-</section>
+</section> -->
 <!-- Clients -->
 
-<section class=" section clients">
+<!-- <section class=" section clients">
     <div class="container">
         <h2 class="section-titel h2-titel">Постійні клієнти</h2>
         <ul class="list clients-list">
@@ -393,10 +405,10 @@
             </li>
         </ul>
     </div>
-</section>
+</section> -->
     </main>
     <!-- Footer -->
-<footer class="page-footer">
+<!-- <footer class="page-footer">
     <div class="container footer-container">
 
     <div>
@@ -475,16 +487,16 @@
 
 </div>
     </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden " data-modal>
+    <!-- <div class="backdrop is-hidden " data-modal>
         <div class="modal">
             <p class="modal-titel">Залиште свої дані, ми вам передзвонимо</p>
             <form action="" class="modal-form">
 
                 <div class="form-element">
                     <label for="name">Ім'я</label>
-                    <!-- svg -->
+                    
                     <div class="input-wraper">
                     <input type="text" name="name" id="userName">
                     <svg
@@ -551,9 +563,10 @@
 
             
         </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
 
