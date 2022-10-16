@@ -1,4 +1,28 @@
+.work-section {
+    display: none;
+}
+
+
 .h2-titel,
+.team-titel
+{
+    margin-bottom: 30px;
+    @include font(28px, 700, 1.17); 
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+
+
+@media screen and (min-width: 1200px)
+{
+
+    .work-section {
+        display: contents;
+    }
+
+  .h2-titel,
 .team-titel{
     margin-bottom: 50px;
     font-weight: 700;
@@ -10,4 +34,5 @@
 }
 .nopadding-section{
     padding-top: 0;
+}  
 }

@@ -16,7 +16,7 @@
         
             <nav class=" container main-nav">
             <a href="./index.html" class="logo"><span class="logo__blue">Web</span>Studio</a> 
-            <button type="button" class="mobile-menu js-open-menu" 
+            <button type="button" class="menu-toggle js-open-menu" 
             aria-expanded="false"
             aria-controls="mobile-menu">
             <svg
@@ -31,16 +31,7 @@
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
               clip-rule="evenodd"
             ></path>
-          </svg>
-
-                <!-- <svg
-                    class="mobile-menu__icon"
-                    width="40"
-                    hight="40"
-                    aria-label="Перемикач мобільного меню">
-                        <use class="mobile-menu__menu" href="./images/icons.svg#icon-menu_40px"></use>
-                        <use class="mobile-menu__close" href="./images/icons.svg#icon-close_40px"></use>
-                    </svg> -->
+          </svg>                   
             </button>
             <ul class="site-nav list">
                 <li class="item"><a href="./index.html"  class="link main-nav-link">Студія</a></li>
@@ -84,7 +75,7 @@
     </div>
 </section>
 <!-- Features -->
-<!-- <section class="section section-features">
+<section class="section section-features">
   
     <div class="container">
     <h2 class="section-titel visually-hidden">Наші переваги</h2>
@@ -131,9 +122,9 @@
         </li>
     </ul>
     </div>  
-</section> -->
+</section>
 <!-- Work -->
-<!-- <section class="section nopadding-section">
+<section class="work-section section nopadding-section">
     <div class="container">
     <h2 class="section-titel h2-titel">Чим ми займаємося</h2>
     <ul class="list list-work">
@@ -157,14 +148,41 @@
         </div>
     </ul>
     </div>
-</section> -->
+</section>
 <!-- Team -->
-<!-- <section class="section team">
+<section class="section team">
     <div class="container">
     <h2 class="section-titel team-titel">Наша команда</h2>
     <ul class="list team__list">
         <li class="team__cards">
-            <img src="./images/teamcard1.jpg" alt="Ігор" width="270">
+
+            <!-- <img src="./images/teamcard1.jpg" alt="Ігор" width="270"> -->
+
+
+            <picture>
+                <source
+                  srcset="./images/teamcard1.jpg 1x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/igor-tablet.jpg 1x, ./images/igor-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="./images/igor-mobile 1x, ./images/igor-mobile@2x.jpg 2x"
+                  src="./images/igor-mobile.jpg"
+                  width="270"
+                  alt="Чоловік"
+                  class="team__photo"
+                />
+              </picture>
+
+
+
+
+
+
+
             <div class="team__list-name">
              <h3 class="section-titel team__name">Ігор Дем'яненко</h3>
             <p class="team__job">Product Designer</p> 
@@ -350,7 +368,7 @@
         </li>
     </ul>
     </div>
-</section> -->
+</section> 
 <!-- Clients -->
 
 <!-- <section class=" section clients">
@@ -583,7 +601,7 @@
 <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
       <svg
-        fill="currentColor"
+        
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -598,11 +616,38 @@
     </button>
 
     <ul class="mobile-menu">
-      <li><a href="" class="link">About</a></li>
-      <li><a href="" class="link">Products</a></li>
-      <li><a href="" class="link">Contacts</a></li>
-      <li><a href="" class="link">Career</a></li>
+        <li class="item"><a href="./index.html"  class="link ">Студія</a></li>
+        <li class="item"><a href="./portfolio.html" class="link ">Портфоліо</a></li>
+        <li class="item"><a href="" class="link ">Контакти</a></li>
     </ul>
+    <ul class="mobile-contacts">
+        <li class="mobile-contact__link">
+            <a href="tel:+380961111111" class="mobile-contact__link mobile-contact__tel">
+            +38 096 111 11 11    
+        </a>
+        </li>
+        <li class="mobile-contacts-link__email">
+            <a href="mailto:info@devstudio.com"class="mobile-contact__link mobile-contact__email">
+            info@devstudio.com
+            </a>
+        </li>
+    </ul>
+<ul class="mobile-social ">
+    <li class="mobile-social_list">
+        <a href="" class="mobile-social__link">Instagram <span class="mobile-social__line"></span></a>
+    </li>
+    <li class="mobile-social_list">
+        <a href="" class="mobile-social__link">Twitter<span class="mobile-social__line"></span></a>
+    </li>
+    <li class="mobile-social_list">
+        <a href="" class="mobile-social__link">Facebook<span class="mobile-social__line"></span></a>
+    </li>
+    <li class="mobile-social_list">
+        <a href="" class="mobile-social__link">LinkedIn<span class="mobile-social__line"></span></a>
+    </li>
+</ul>
+
+
   </div>
 
     <script

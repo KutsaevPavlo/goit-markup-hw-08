@@ -1,4 +1,83 @@
 .featers-items{
+    width: 450px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+}
+.features-links-icons{
+    margin: auto;
+    width: 70px;
+    height: 70px;
+}
+
+.features-list,
+.list-work,
+.team__list
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.features-list .item{
+    width: 450px;
+}
+.titel-features{
+    margin-bottom: 10px;
+    margin-top: 30px
+}
+.section-titel{
+    color: var(--section-titel-color);
+
+    @include font(14px, 700, 1.14);    
+   
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.list-work-items{
+    position: relative;
+}
+.list-work-titel{
+    color: var(--hero-titel-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.list-work-name{
+  position: absolute;  
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.features{
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}  
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px)
+{
+  .featers-items{
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
@@ -64,4 +143,7 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+}  
 }
+
+
