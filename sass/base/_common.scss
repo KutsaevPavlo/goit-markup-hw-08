@@ -4,10 +4,13 @@ h3,
 ul,
 p {
     margin: 0;
+    padding: 0;
 }
 
 ul {
     padding-left: 0;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -22,6 +25,14 @@ img {
     
 }
 
+
+
+
+@media screen and (min-width: 768px) {
+    .container {
+    max-width: 768px;
+}
+}
 
 @media screen and (max-width: 480px) {
     .container {

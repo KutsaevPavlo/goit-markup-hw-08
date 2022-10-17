@@ -1,5 +1,5 @@
 .featers-items{
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -20,7 +20,7 @@
     justify-content: center;
 }
 .features-list .item{
-    width: 450px;
+    max-width: 450px;
 }
 .titel-features{
     margin-bottom: 10px;
@@ -32,7 +32,7 @@
     @include font(14px, 700, 1.14);    
    
     letter-spacing: 0.03em;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-align: center;
 }
 .list-work-items{
