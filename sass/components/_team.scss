@@ -14,12 +14,20 @@ border-radius: 0px 0px 4px 4px;
 background-color: var(--hero-titel-color);
 
 max-width: 450px;
+
 @media screen and (min-width: 768px)
 { max-width: calc((100% - 30px)/2);}
 
 }
 
-margin-bottom: 30px;
+&__cards:not(:last-child)
+{margin-bottom: 30px;}
+
+
+@media (min-width: 768px) {.team__cards:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}}
+
 
 
 &__name{
@@ -103,7 +111,16 @@ margin-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
     background-color: var(--hero-titel-color);
     width: 270px;
+    margin-bottom: 0;
     }
+
+    @media (min-width: 1200px) {
+    .team__cards:nth-last-child(-n+4) {
+        margin-bottom: 0;
+    }
+}
+
+
     
     &__name{
         font-weight: 500;
