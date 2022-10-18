@@ -440,6 +440,12 @@ img {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .features-list {
+    margin-bottom: 60px;
+  }
+}
+
 .features-list .item {
   max-width: 450px;
 }
@@ -1941,6 +1947,11 @@ img {
 
 @media screen and (max-width: 479px) {
   .footer-input {
+    display: block;
+    width: 100%;
+  }
+  .footer-form {
+    display: block;
     width: 100%;
   }
 }

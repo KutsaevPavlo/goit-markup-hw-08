@@ -92,8 +92,15 @@
 
 @media screen and (max-width: 479px){
   .footer-input{
+    display: block;
     width: 100%;
 }  
+
+.footer-form{
+    display: block;
+    width: 100%;
+}
+
 }
 
 @media screen and (min-width: 480px){
