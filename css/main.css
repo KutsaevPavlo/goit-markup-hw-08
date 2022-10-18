@@ -955,6 +955,11 @@ img {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .social-links-footer {
+    margin-top: 0px;
+  }
+}
 
 .social-links-footer .social-links__cirl {
   background: rgba(255, 255, 255, 0.1);
@@ -969,6 +974,22 @@ img {
   background: var(--primary-acent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .footer-wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-waper__nav {
+    margin-right: 165px;
+  }
+  .footer-element {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .page-footer {
     background-color: #2F303A;
