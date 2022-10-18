@@ -1692,9 +1692,9 @@ img {
   text-decoration: none;
 }
 
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
+.mobile-menu .link:hover,
+.mobile-menu .link:focus {
+  color: #2196F3;
 }
 
 .menu-toggle {
@@ -1730,7 +1730,7 @@ img {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  fill: #2196F3;
 }
 
 .menu-container {
