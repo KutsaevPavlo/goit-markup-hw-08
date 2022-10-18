@@ -4,6 +4,30 @@
     height: 400px;
     background-color: #2F303A;
     background-image: linear-gradient(to right, var(--bghero), var(--bghero)), url(../images/background-mobile-1x.jpg);
+    
+    @media screen and (min-width: 768px){
+        max-width: 768px;
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+         url(../images/hero-tablet.jpg);
+        background-size: 768px 400px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url(../images/hero-tablet@2x.jpg);
+     }
+    }
+    
+    
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: 480px;
