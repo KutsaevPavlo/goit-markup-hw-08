@@ -435,13 +435,18 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .features-list .item {
   max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .features-list .item {
+    max-width: calc((100% - 30px) / 2);
+  }
 }
 
 .titel-features {

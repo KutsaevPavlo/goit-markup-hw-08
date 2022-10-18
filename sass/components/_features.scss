@@ -17,10 +17,13 @@
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 .features-list .item{
+
     max-width: 450px;
+    @media screen and (min-width: 768px)
+   { max-width: calc((100% - 30px)/2);}
 }
 .titel-features{
     margin-bottom: 10px;
